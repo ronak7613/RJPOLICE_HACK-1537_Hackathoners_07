@@ -1,0 +1,123 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>financial forensics</title>
+  <style>
+        /* CSS reset */
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    /* Basic styling for navbar */
+    .navbar {
+    background-color: #87CEEB;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    }
+
+    .navbar ul {
+    list-style: none;
+    }
+
+    .navbar ul li {
+    display: inline-block;
+    margin: 0 10px;
+    }
+
+    .navbar ul li a {
+    text-decoration: none;
+    color: #000000;
+    }
+
+    /* Styling for main container */
+    .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh; /* Adjust as needed */
+    }
+
+    .upload-box {
+    border: 2px dashed #aaa;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+
+    .upload-box h2 {
+    margin-bottom: 10px;
+    }
+
+    .file-input {
+    display: none;
+    }
+
+    .file-label {
+    padding: 10px 20px;
+    background-color: #4285f4;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+
+    .submit-btn {
+    padding: 10px 20px;
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    align-items: center;
+    }
+
+    .submit-btn:hover {
+    background-color: #357ae8;
+    }    
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <!-- Navigation content goes here -->
+    <ul>
+      
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  
+  <div class="main-container">
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 style = " border: 1px solid #ccc; border-radius: 20px;padding: 20px; margin-bottom: 10px; background-color: #87CEEB; font-weight: 400; color:#000000; text-decoration: none;" > Financial~Forensics<h1>
+    
+    <br>
+    <div class="upload-box">
+      <h2>Upload a File</h2>
+      <br>
+      <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}  
+        <input type="file" id="fileInput" class="file-input">
+        <label for="fileInput" class="file-label">Choose File</label>
+        </div>
+    </form>
+    <form method="get" action="{% url 'next_page' %}">
+    
+        <button type="submit" class="submit-btn">Upload</button>
+    
+    </form>
+  </div>
+</body>
+</html>

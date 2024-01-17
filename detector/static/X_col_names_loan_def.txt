@@ -1,0 +1,13 @@
+['EXT_SOURCE_2', 'EXT_SOURCE_3', 'EXT_SOURCE_1', 'DAYS_BIRTH',
+       'C_STATUS_Refused', 'REGION_RATING_CLIENT_W_CITY', 'INCOME_Working',
+       'EDUCATION_Higher education', 'DAYS_LAST_PHONE_CHANGE', 'GENDER_M',
+       'DAYS_ID_PUBLISH', 'REG_CITY_NOT_WORK_CITY', 'Días Dec Previos',
+       'CLIENT_TYPE_New', 'REG_CITY_NOT_LIVE_CITY', 'FLAG_DOCUMENT_3',
+       'DAYS_REGISTRATION', 'CHANNEL_TYPE_AP+ (Cash loan)',
+       'DEF_30_CNT_SOCIAL_CIRCLE', 'C_STATUS_Approved',
+       'CONTRACT_TYPE_Cash loans', 'AMT_CREDIT', 'HOUSING_With parents',
+       'FLOORSMAX_MODE', 'FLAG_DOCUMENT_6', 'FLAG_WORK_PHONE',
+       'Cnt pay Previos', 'FAMILY_Single / not married',
+       'Monto DownPay Previas', 'FAMILY_Married', 'HOUR_APPR_PROCESS_START',
+       'FLAG_PHONE', 'INCOME_State servant', 'CHANNEL_TYPE_Contact center',
+       'FAMILY_Civil marriage']
